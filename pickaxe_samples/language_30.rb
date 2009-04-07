@@ -1,0 +1,20 @@
+#---
+# Excerpted from "Programming Ruby",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material, 
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose. 
+# Visit http://www.pragmaticprogrammer.com/titles/ruby3 for more book information.
+#---
+  OUTER_CONST = 99
+
+  class Const
+    def get_const
+      CONST
+    end
+    CONST = OUTER_CONST + 1
+  end
+  Const.new.get_const
+  Const::CONST
+  ::OUTER_CONST
+  Const::NEW_CONST = 123
