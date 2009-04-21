@@ -1,0 +1,49 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Develop' ">
+    <Name>Develop</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Name>Release</Name>
+  </PropertyGroup>
+  <UsingTask TaskName="RML.Steel.SteelRubyBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <UsingTask TaskName="RML.Steel.SteelRailsBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <Target Name="BuildRails" Inputs="@(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRailsBuild EmbeddedRubyFiles="@(EmbeddedRuby)" ProjectDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+  <Target Name="BuildRuby" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRubyBuild RubyFiles="@(Ruby)" ProjectDirectory="$(MSBuildProjectDirectory)" InterpreterName="$(InterpreterName)" RubyLibraryPath="$(LibraryPath)" />
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="BuildRuby; BuildRails" Inputs="@(Ruby); @(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <PropertyGroup>
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+    <ProjectGuid>{9cc4879c-6f85-416a-baee-523bfd28af40}</ProjectGuid>
+    <AssemblyName>eight</AssemblyName>
+    <Name>8</Name>
+    <RootNamespace>eight</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Ruby Include="and_or.rb" />
+    <Ruby Include="case.rb" />
+    <Ruby Include="case2.rb" />
+    <Ruby Include="if_else.rb" />
+    <Ruby Include="if_elseif.rb" />
+    <Ruby Include="if_then.rb" />
+    <Ruby Include="if_else_alt.rb" />
+    <Ruby Include="if_unless_mod.rb" />
+    <Ruby Include="unless.rb" />
+  </ItemGroup>
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+</Project>

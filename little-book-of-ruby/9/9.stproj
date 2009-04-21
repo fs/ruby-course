@@ -1,0 +1,47 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Develop' ">
+    <Name>Develop</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Name>Release</Name>
+  </PropertyGroup>
+  <UsingTask TaskName="RML.Steel.SteelRubyBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <UsingTask TaskName="RML.Steel.SteelRailsBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <Target Name="BuildRails" Inputs="@(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRailsBuild EmbeddedRubyFiles="@(EmbeddedRuby)" ProjectDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+  <Target Name="BuildRuby" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRubyBuild RubyFiles="@(Ruby)" ProjectDirectory="$(MSBuildProjectDirectory)" InterpreterName="$(InterpreterName)" RubyLibraryPath="$(LibraryPath)" />
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="BuildRuby; BuildRails" Inputs="@(Ruby); @(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <PropertyGroup>
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+    <ProjectGuid>{db852884-2aa7-4f83-9b86-7e41e9e92f1f}</ProjectGuid>
+    <AssemblyName>nine</AssemblyName>
+    <Name>9</Name>
+    <RootNamespace>nine</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Ruby Include="modules1.rb" />
+    <Ruby Include="modules2.rb" />
+    <Ruby Include="modules3.rb" />
+    <Ruby Include="modules4.rb" />
+    <Ruby Include="mod_vars.rb" />
+    <Ruby Include="requiremodule.rb" />
+    <Ruby Include="testmod.rb" />
+  </ItemGroup>
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+</Project>

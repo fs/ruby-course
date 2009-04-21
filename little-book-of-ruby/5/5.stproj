@@ -1,0 +1,52 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Develop' ">
+    <Name>Develop</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Name>Release</Name>
+  </PropertyGroup>
+  <UsingTask TaskName="RML.Steel.SteelRubyBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <UsingTask TaskName="RML.Steel.SteelRailsBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=MSIL" />
+  <Target Name="BuildRails" Inputs="@(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRailsBuild EmbeddedRubyFiles="@(EmbeddedRuby)" ProjectDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+  <Target Name="BuildRuby" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRubyBuild RubyFiles="@(Ruby)" ProjectDirectory="$(MSBuildProjectDirectory)" InterpreterName="$(InterpreterName)" RubyLibraryPath="$(LibraryPath)" />
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="BuildRuby; BuildRails" Inputs="@(Ruby); @(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <PropertyGroup>
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+    <ProjectGuid>{d9a1f6af-f516-421f-922e-9876cff98ccd}</ProjectGuid>
+    <AssemblyName>five</AssemblyName>
+    <Name>5</Name>
+    <RootNamespace>five</RootNamespace>
+    <SynchronizationExcludeHiddenFiles>True</SynchronizationExcludeHiddenFiles>
+    <SynchronizeExcludeNoExtension>False</SynchronizeExcludeNoExtension>
+    <RubyTimeout>60</RubyTimeout>
+    <ERBTimeout>60</ERBTimeout>
+  </PropertyGroup>
+  <ItemGroup>
+    <Ruby Include="array0.rb" />
+    <Ruby Include="array1.rb" />
+    <Ruby Include="array2.rb" />
+    <Ruby Include="array_assign.rb" />
+    <Ruby Include="array_index.rb" />
+    <Ruby Include="dir_array.rb" />
+    <Ruby Include="array_new.rb" />
+    <Ruby Include="multi_array.rb" />
+  </ItemGroup>
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+</Project>
