@@ -1,0 +1,31 @@
+--- 
+- !ruby/object:CD 
+  artist: The Groovesters
+  name: Groovy Tunes
+  numtracks: 12
+- !ruby/object:PopCD 
+  artist: Dolly Parton
+  genre: Country
+  name: Greatest Hits
+  numtracks: 38
+- !ruby/object:PopCD 
+  artist: Black Lace
+  genre: Heavy Metal
+  name: Unforgettable Classics
+  numtracks: 6
+- !ruby/object:ClassicalCD 
+  artist: Gigli
+  composer: Verdi
+  conductor: Lambretta
+  name: Aida
+  numtracks: 45
+- !ruby/object:ClassicalCD 
+  artist: Mado Robin
+  composer: Verdi, Mozart, Delibes
+  conductor: Bert Gribbitt
+  name: Astonishing Highs
+  numtracks: 26
+- !ruby/object:CD 
+  artist: The Red-Hot Swinging Set
+  name: Elevator Faves
+  numtracks: 205

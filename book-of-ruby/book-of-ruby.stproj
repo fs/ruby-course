@@ -1,0 +1,570 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Ruby Include="ch10\1blocks.rb" />
+    <Ruby Include="ch10\2blocks.rb" />
+    <Ruby Include="ch10\3blocks.rb" />
+    <Ruby Include="ch10\4blocks.rb" />
+    <Ruby Include="ch10\5blocks.rb" />
+    <Ruby Include="ch10\6blocks.rb" />
+    <Ruby Include="ch10\block_closure.rb" />
+    <Ruby Include="ch10\block_closure2.rb" />
+    <Ruby Include="ch10\block_or_hash.rb" />
+    <Ruby Include="ch10\closures1.rb" />
+    <Ruby Include="ch10\closures2.rb" />
+    <Ruby Include="ch10\iterate1.rb" />
+    <Ruby Include="ch10\iterate2.rb" />
+    <Ruby Include="ch10\iterate3.rb" />
+    <Ruby Include="ch10\local_var_scope.rb" />
+    <Ruby Include="ch10\precedence.rb" />
+    <Ruby Include="ch10\proc_create.rb" />
+    <Ruby Include="ch10\proc_lamba.rb" />
+    <Ruby Include="ch11\add_method.rb" />
+    <Ruby Include="ch11\allsymbols.rb" />
+    <Ruby Include="ch11\ints_and_symbols.rb" />
+    <Ruby Include="ch11\symbols_1.rb" />
+    <Ruby Include="ch11\symbols_2.rb" />
+    <Ruby Include="ch11\symbols_3.rb" />
+    <Ruby Include="ch11\symbols_strings.rb" />
+    <Ruby Include="ch11\symbol_ids.rb" />
+    <Ruby Include="ch11\symbol_ref.rb" />
+    <Ruby Include="ch11\symbol_ref2.rb" />
+    <Ruby Include="ch12\alias_methods.rb" />
+    <Ruby Include="ch12\compare.rb" />
+    <Ruby Include="ch12\extend.rb" />
+    <Ruby Include="ch12\happy_sad.rb" />
+    <Ruby Include="ch12\inst_class_vars.rb" />
+    <Ruby Include="ch12\load_again.rb" />
+    <Ruby Include="ch12\load_module.rb" />
+    <Ruby Include="ch12\math.rb" />
+    <Ruby Include="ch12\modules1.rb" />
+    <Ruby Include="ch12\modules2.rb" />
+    <Ruby Include="ch12\modules3.rb" />
+    <Ruby Include="ch12\modules4.rb" />
+    <Ruby Include="ch12\modules_classes.rb" />
+    <Ruby Include="ch12\module_func.rb" />
+    <Ruby Include="ch12\module_inst.rb" />
+    <Ruby Include="ch12\mod_vars.rb" />
+    <Ruby Include="ch12\multimods.rb" />
+    <Ruby Include="ch12\require_again.rb" />
+    <Ruby Include="ch12\require_module.rb" />
+    <Ruby Include="ch12\require_module2.rb" />
+    <Ruby Include="ch12\scope_resolution.rb.rb" />
+    <Ruby Include="ch12\test.rb" />
+    <Ruby Include="ch12\testmod.rb" />
+    <Ruby Include="ch13\copy_files.rb" />
+    <Ruby Include="ch13\file_info.rb" />
+    <Ruby Include="ch13\file_info2.rb" />
+    <Ruby Include="ch13\file_info3.rb" />
+    <Ruby Include="ch13\file_ops.rb" />
+    <Ruby Include="ch13\file_test.rb" />
+    <Ruby Include="ch13\io_test.rb" />
+    <Ruby Include="ch13\open_close.rb" />
+    <Ruby Include="ch13\recursion.rb" />
+    <Ruby Include="ch14\cd_db.rb" />
+    <Ruby Include="ch14\gamesave_y.rb" />
+    <Ruby Include="ch14\hash_to_yaml.rb" />
+    <Ruby Include="ch14\limit_y.rb" />
+    <Ruby Include="ch14\multi_docs.rb" />
+    <Ruby Include="ch14\nested_arrays.rb" />
+    <Ruby Include="ch14\to_yaml1.rb" />
+    <Ruby Include="ch14\to_yaml2.rb" />
+    <Ruby Include="ch14\yaml_dump1.rb" />
+    <Ruby Include="ch14\yaml_dump2.rb" />
+    <Ruby Include="ch14\yaml_test1.rb" />
+    <Ruby Include="ch14\yaml_test2.rb" />
+    <Ruby Include="ch15\gamesave_m.rb" />
+    <Ruby Include="ch15\limit_m.rb" />
+    <Ruby Include="ch15\marshal1.rb" />
+    <Ruby Include="ch15\singleton_m.rb" />
+    <Ruby Include="ch15\singleton_m2.rb" />
+    <Ruby Include="ch15\singleton_m3.rb" />
+    <Ruby Include="ch15\singleton_m4.rb" />
+    <Ruby Include="ch15\singleton_y.rb" />
+    <Ruby Include="ch15\version_error.rb" />
+    <Ruby Include="ch15\version_m.rb" />
+    <Ruby Include="ch15\version_m2.rb" />
+    <Ruby Include="ch16\greedy1.rb" />
+    <Ruby Include="ch16\greedy2.rb" />
+    <Ruby Include="ch16\groups.rb" />
+    <Ruby Include="ch16\if_test.rb" />
+    <Ruby Include="ch16\match.rb" />
+    <Ruby Include="ch16\matchdata.rb" />
+    <Ruby Include="ch16\match_groups.rb" />
+    <Ruby Include="ch16\match_scan.rb" />
+    <Ruby Include="ch16\overview.rb" />
+    <Ruby Include="ch16\pre_post_match.rb" />
+    <Ruby Include="ch16\regex0.rb" />
+    <Ruby Include="ch16\regex1.rb" />
+    <Ruby Include="ch16\regex2.rb" />
+    <Ruby Include="ch16\regex3a.rb" />
+    <Ruby Include="ch16\regex3b.rb" />
+    <Ruby Include="ch16\regex4.rb" />
+    <Ruby Include="ch16\regexp_file1.rb" />
+    <Ruby Include="ch16\regexp_file2.rb" />
+    <Ruby Include="ch16\start_end1.rb" />
+    <Ruby Include="ch16\start_end2.rb" />
+    <Ruby Include="ch16\string_ops.rb" />
+    <Ruby Include="ch16\string_slice.rb" />
+    <Ruby Include="ch16\wordcount.rb" />
+    <Ruby Include="ch17\file_find.rb" />
+    <Ruby Include="ch17\file_find2.rb" />
+    <Ruby Include="ch17\join.rb" />
+    <Ruby Include="ch17\main_thread.rb" />
+    <Ruby Include="ch17\mutex.rb" />
+    <Ruby Include="ch17\no_mutex.rb" />
+    <Ruby Include="ch17\pass0.rb" />
+    <Ruby Include="ch17\pass0_new.rb" />
+    <Ruby Include="ch17\pass1.rb" />
+    <Ruby Include="ch17\pass2.rb" />
+    <Ruby Include="ch17\pass3.rb" />
+    <Ruby Include="ch17\pass4.rb" />
+    <Ruby Include="ch17\stop_run.rb" />
+    <Ruby Include="ch17\threads1.rb" />
+    <Ruby Include="ch17\threads2.rb" />
+    <Ruby Include="ch17\threads3.rb" />
+    <Ruby Include="ch17\threads4.rb" />
+    <Ruby Include="ch17\threads5.rb" />
+    <Ruby Include="ch17\thread_status.rb" />
+    <Ruby Include="ch18\buggy.rb" />
+    <Ruby Include="ch18\debug_test.rb" />
+    <Ruby Include="ch18\linebreaks.rb" />
+    <Ruby Include="ch18\test1.rb" />
+    <Ruby Include="ch18\test2.rb" />
+    <Ruby Include="ch19\blog\app\controllers\application.rb" />
+    <Ruby Include="ch19\blog\app\controllers\posts_controller.rb" />
+    <Ruby Include="ch19\blog\app\helpers\application_helper.rb" />
+    <Ruby Include="ch19\blog\app\helpers\posts_helper.rb" />
+    <Ruby Include="ch19\blog\app\models\post.rb" />
+    <Ruby Include="ch19\blog\config\boot.rb" />
+    <Ruby Include="ch19\blog\config\environment.rb" />
+    <Ruby Include="ch19\blog\config\environments\development.rb" />
+    <Ruby Include="ch19\blog\config\environments\production.rb" />
+    <Ruby Include="ch19\blog\config\environments\test.rb" />
+    <Ruby Include="ch19\blog\config\initializers\inflections.rb" />
+    <Ruby Include="ch19\blog\config\initializers\mime_types.rb" />
+    <Ruby Include="ch19\blog\config\initializers\new_rails_defaults.rb" />
+    <Ruby Include="ch19\blog\config\routes.rb" />
+    <Ruby Include="ch19\blog\db\migrate\20081231131720_create_posts.rb" />
+    <Ruby Include="ch19\blog\db\schema.rb" />
+    <Ruby Include="ch19\blog\public\dispatch.rb" />
+    <Ruby Include="ch19\blog\script\steelserver.rb" />
+    <Ruby Include="ch19\blog\test\functional\posts_controller_test.rb" />
+    <Ruby Include="ch19\blog\test\performance\browsing_test.rb" />
+    <Ruby Include="ch19\blog\test\test_helper.rb" />
+    <Ruby Include="ch19\blog\test\unit\post_test.rb" />
+    <Ruby Include="ch19\sayhello1.rb" />
+    <Ruby Include="ch19\sayhello2.rb" />
+    <Ruby Include="ch1\1helloworld.rb" />
+    <Ruby Include="ch1\2helloname.rb" />
+    <Ruby Include="ch1\3string_eval.rb" />
+    <Ruby Include="ch1\4calctax.rb" />
+    <Ruby Include="ch1\5taxcalculator.rb" />
+    <Ruby Include="ch1\6dogs.rb" />
+    <Ruby Include="ch1\7treasure.rb" />
+    <Ruby Include="ch1\8to_s.rb" />
+    <Ruby Include="ch1\comments.rb" />
+    <Ruby Include="ch1\p.rb" />
+    <Ruby Include="ch1\variables.rb" />
+    <Ruby Include="ch20\binding.rb" />
+    <Ruby Include="ch20\binding2.rb" />
+    <Ruby Include="ch20\cant_freeze.rb" />
+    <Ruby Include="ch20\classvar_getset.rb" />
+    <Ruby Include="ch20\create_class.rb" />
+    <Ruby Include="ch20\dynamic.rb" />
+    <Ruby Include="ch20\dynamic2.rb" />
+    <Ruby Include="ch20\eval.rb" />
+    <Ruby Include="ch20\eval2.rb" />
+    <Ruby Include="ch20\eval3.rb" />
+    <Ruby Include="ch20\eval4.rb" />
+    <Ruby Include="ch20\eval_string.rb" />
+    <Ruby Include="ch20\freeze.rb" />
+    <Ruby Include="ch20\freeze_class.rb" />
+    <Ruby Include="ch20\instance_eval.rb" />
+    <Ruby Include="ch20\module_eval.rb" />
+    <Ruby Include="ch20\nomethod1.rb" />
+    <Ruby Include="ch20\nomethod2.rb" />
+    <Ruby Include="ch20\rem_methods1.rb" />
+    <Ruby Include="ch20\rem_methods2.rb" />
+    <Ruby Include="ch20\send1.rb" />
+    <Ruby Include="ch20\send2.rb" />
+    <Ruby Include="ch20\str_eval.rb" />
+    <Ruby Include="ch20\undef_methods.rb" />
+    <Ruby Include="ch20\writeprog.rb" />
+    <Ruby Include="ch2\1adventure.rb" />
+    <Ruby Include="ch2\2adventure.rb" />
+    <Ruby Include="ch2\accessors1.rb" />
+    <Ruby Include="ch2\accessors2.rb" />
+    <Ruby Include="ch2\accessors3.rb" />
+    <Ruby Include="ch2\classconsts.rb" />
+    <Ruby Include="ch2\partial_classes.rb" />
+    <Ruby Include="ch2\super.rb" />
+    <Ruby Include="ch2\superclasses.rb" />
+    <Ruby Include="ch2\super_args.rb" />
+    <Ruby Include="ch3\1strings.rb" />
+    <Ruby Include="ch3\2strings.rb" />
+    <Ruby Include="ch3\3strings.rb" />
+    <Ruby Include="ch3\4backquotes.rb" />
+    <Ruby Include="ch3\chop_chomp.rb" />
+    <Ruby Include="ch3\for_to.rb" />
+    <Ruby Include="ch3\heredoc.rb" />
+    <Ruby Include="ch3\literals.rb" />
+    <Ruby Include="ch3\ranges.rb" />
+    <Ruby Include="ch3\string_assign.rb" />
+    <Ruby Include="ch3\string_concat.rb" />
+    <Ruby Include="ch3\string_index.rb" />
+    <Ruby Include="ch3\string_methods.rb" />
+    <Ruby Include="ch3\string_printf.rb" />
+    <Ruby Include="ch3\str_range.rb" />
+    <Ruby Include="ch4\append_concat.rb" />
+    <Ruby Include="ch4\array0.rb" />
+    <Ruby Include="ch4\array1.rb" />
+    <Ruby Include="ch4\array2.rb" />
+    <Ruby Include="ch4\array_assign.rb" />
+    <Ruby Include="ch4\array_compare.rb" />
+    <Ruby Include="ch4\array_copy.rb" />
+    <Ruby Include="ch4\array_index.rb" />
+    <Ruby Include="ch4\array_methods.rb" />
+    <Ruby Include="ch4\array_sort.rb" />
+    <Ruby Include="ch4\comparisons.rb" />
+    <Ruby Include="ch4\dir_array.rb" />
+    <Ruby Include="ch4\hash1.rb" />
+    <Ruby Include="ch4\hash2.rb" />
+    <Ruby Include="ch4\hash_methods.rb" />
+    <Ruby Include="ch4\hash_ops.rb" />
+    <Ruby Include="ch4\hash_sort.rb" />
+    <Ruby Include="ch4\matrix.rb" />
+    <Ruby Include="ch4\multi_array.rb" />
+    <Ruby Include="ch4\multi_array2.rb" />
+    <Ruby Include="ch4\sets.rb" />
+    <Ruby Include="ch5\1loops.rb" />
+    <Ruby Include="ch5\2loops.rb" />
+    <Ruby Include="ch5\3loops.rb" />
+    <Ruby Include="ch5\block_syntax.rb" />
+    <Ruby Include="ch5\each_loop.rb" />
+    <Ruby Include="ch5\enum.rb" />
+    <Ruby Include="ch5\enum2.rb" />
+    <Ruby Include="ch5\enum3.rb" />
+    <Ruby Include="ch5\for_each.rb" />
+    <Ruby Include="ch5\for_each2.rb" />
+    <Ruby Include="ch5\for_loop.rb" />
+    <Ruby Include="ch5\for_to.rb" />
+    <Ruby Include="ch5\include_enum1.rb" />
+    <Ruby Include="ch5\include_enum2.rb" />
+    <Ruby Include="ch5\include_enum3.rb" />
+    <Ruby Include="ch5\multi_array.rb" />
+    <Ruby Include="ch5\until.rb" />
+    <Ruby Include="ch6\and_or.rb" />
+    <Ruby Include="ch6\and_or_wrong.rb" />
+    <Ruby Include="ch6\boolean_ops.rb" />
+    <Ruby Include="ch6\case.rb" />
+    <Ruby Include="ch6\case2.rb" />
+    <Ruby Include="ch6\case3.rb" />
+    <Ruby Include="ch6\case4.rb" />
+    <Ruby Include="ch6\catch_throw.rb" />
+    <Ruby Include="ch6\constants.rb" />
+    <Ruby Include="ch6\days.rb" />
+    <Ruby Include="ch6\days2.rb" />
+    <Ruby Include="ch6\eccentricities.rb" />
+    <Ruby Include="ch6\if_else.rb" />
+    <Ruby Include="ch6\if_else_alt.rb" />
+    <Ruby Include="ch6\if_elsif.rb" />
+    <Ruby Include="ch6\if_elsif2.rb" />
+    <Ruby Include="ch6\if_then.rb" />
+    <Ruby Include="ch6\if_unless_mod.rb" />
+    <Ruby Include="ch6\unless.rb" />
+    <Ruby Include="ch7\class_classes.rb" />
+    <Ruby Include="ch7\class_hierarchy.rb" />
+    <Ruby Include="ch7\class_methods1.rb" />
+    <Ruby Include="ch7\class_methods2.rb" />
+    <Ruby Include="ch7\class_methods3.rb" />
+    <Ruby Include="ch7\file_methods.rb" />
+    <Ruby Include="ch7\inst_vars.rb" />
+    <Ruby Include="ch7\method_names.rb" />
+    <Ruby Include="ch7\nested_methods.rb" />
+    <Ruby Include="ch7\nested_methods2.rb" />
+    <Ruby Include="ch7\new.rb" />
+    <Ruby Include="ch7\override.rb" />
+    <Ruby Include="ch7\protected.rb" />
+    <Ruby Include="ch7\pub_prot_priv.rb" />
+    <Ruby Include="ch7\send.rb" />
+    <Ruby Include="ch7\singleton_class.rb" />
+    <Ruby Include="ch7\singleton_class2.rb" />
+    <Ruby Include="ch7\singleton_meth1.rb" />
+    <Ruby Include="ch7\singleton_meth2.rb" />
+    <Ruby Include="ch8\arg_passing.rb" />
+    <Ruby Include="ch8\assignment.rb" />
+    <Ruby Include="ch8\assign_ref.rb" />
+    <Ruby Include="ch8\concat.rb" />
+    <Ruby Include="ch8\default_args.rb" />
+    <Ruby Include="ch8\equal_tests.rb" />
+    <Ruby Include="ch8\hidden.rb" />
+    <Ruby Include="ch8\identical.rb" />
+    <Ruby Include="ch8\in_out.rb" />
+    <Ruby Include="ch8\methods.rb" />
+    <Ruby Include="ch8\method_call.rb" />
+    <Ruby Include="ch8\not_hidden.rb" />
+    <Ruby Include="ch8\object_ids.rb" />
+    <Ruby Include="ch8\parallel_assign.rb" />
+    <Ruby Include="ch8\parentheses.rb" />
+    <Ruby Include="ch8\return_many.rb" />
+    <Ruby Include="ch8\return_vals.rb" />
+    <Ruby Include="ch8\side_effects.rb" />
+    <Ruby Include="ch8\str_reverse.rb" />
+    <Ruby Include="ch9\catch_except.rb" />
+    <Ruby Include="ch9\disk_err.rb" />
+    <Ruby Include="ch9\div_by_zero.rb" />
+    <Ruby Include="ch9\else.rb" />
+    <Ruby Include="ch9\ensure.rb" />
+    <Ruby Include="ch9\ensure2.rb" />
+    <Ruby Include="ch9\errno.rb" />
+    <Ruby Include="ch9\exception1.rb" />
+    <Ruby Include="ch9\exception2.rb" />
+    <Ruby Include="ch9\exception_tree.rb" />
+    <Ruby Include="ch9\multi_except.rb" />
+    <Ruby Include="ch9\multi_except2.rb" />
+    <Ruby Include="ch9\multi_except_err.rb" />
+    <Ruby Include="ch9\omit_begin_end.rb" />
+    <Ruby Include="ch9\raise.rb" />
+    <Ruby Include="ch9\raise2.rb" />
+    <Ruby Include="ch9\raise3.rb" />
+    <Ruby Include="ch9\retry.rb" />
+    <Ruby Include="ch9\retry2.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ch10" />
+    <Folder Include="ch11" />
+    <Folder Include="ch12" />
+    <Folder Include="ch13" />
+    <Folder Include="ch13\srcdir" />
+    <Folder Include="ch14" />
+    <Folder Include="ch15" />
+    <Folder Include="ch16" />
+    <Folder Include="ch17" />
+    <Folder Include="ch18" />
+    <Folder Include="ch19" />
+    <Folder Include="ch19\blog" />
+    <Folder Include="ch19\blog\app" />
+    <Folder Include="ch19\blog\app\controllers" />
+    <Folder Include="ch19\blog\app\helpers" />
+    <Folder Include="ch19\blog\app\models" />
+    <Folder Include="ch19\blog\app\views" />
+    <Folder Include="ch19\blog\app\views\layouts" />
+    <Folder Include="ch19\blog\app\views\posts" />
+    <Folder Include="ch19\blog\config" />
+    <Folder Include="ch19\blog\config\environments" />
+    <Folder Include="ch19\blog\config\initializers" />
+    <Folder Include="ch19\blog\config\locales" />
+    <Folder Include="ch19\blog\db" />
+    <Folder Include="ch19\blog\db\migrate" />
+    <Folder Include="ch19\blog\doc" />
+    <Folder Include="ch19\blog\lib" />
+    <Folder Include="ch19\blog\lib\tasks" />
+    <Folder Include="ch19\blog\log" />
+    <Folder Include="ch19\blog\public" />
+    <Folder Include="ch19\blog\public\images" />
+    <Folder Include="ch19\blog\public\javascripts" />
+    <Folder Include="ch19\blog\public\stylesheets" />
+    <Folder Include="ch19\blog\script" />
+    <Folder Include="ch19\blog\script\performance" />
+    <Folder Include="ch19\blog\script\process" />
+    <Folder Include="ch19\blog\test" />
+    <Folder Include="ch19\blog\test\fixtures" />
+    <Folder Include="ch19\blog\test\functional" />
+    <Folder Include="ch19\blog\test\integration" />
+    <Folder Include="ch19\blog\test\performance" />
+    <Folder Include="ch19\blog\test\unit" />
+    <Folder Include="ch19\blog\tmp" />
+    <Folder Include="ch19\blog\tmp\cache" />
+    <Folder Include="ch19\blog\tmp\pids" />
+    <Folder Include="ch19\blog\tmp\sessions" />
+    <Folder Include="ch19\blog\tmp\sockets" />
+    <Folder Include="ch19\blog\vendor" />
+    <Folder Include="ch19\blog\vendor\plugins" />
+    <Folder Include="ch1\" />
+    <Folder Include="ch20" />
+    <Folder Include="ch2\" />
+    <Folder Include="ch3\" />
+    <Folder Include="ch4" />
+    <Folder Include="ch5" />
+    <Folder Include="ch6" />
+    <Folder Include="ch7" />
+    <Folder Include="ch8" />
+    <Folder Include="ch9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ch13\myfile.txt" />
+    <Content Include="ch13\srcdir\file1.txt" />
+    <Content Include="ch13\srcdir\file2.txt" />
+    <Content Include="ch13\srcdir\file3.txt" />
+    <Content Include="ch13\testfile.txt" />
+    <Content Include="ch14\cd_db.yml" />
+    <Content Include="ch14\friends.yml" />
+    <Content Include="ch14\game.yml" />
+    <Content Include="ch14\morefriends.yml" />
+    <Content Include="ch14\multidoc.yml" />
+    <Content Include="ch15\friends.sav" />
+    <Content Include="ch15\game.sav" />
+    <Content Include="ch15\morefriends.sav" />
+    <Content Include="ch15\test.sav" />
+    <Content Include="ch15\test.yml" />
+    <Content Include="ch15\test2.sav" />
+    <Content Include="ch16\comments.txt" />
+    <Content Include="ch16\nocomments.txt" />
+    <Content Include="ch16\testfile1.txt" />
+    <Content Include="ch19\blog\config\database.yml" />
+    <Content Include="ch19\blog\config\lighttpd.conf" />
+    <Content Include="ch19\blog\config\locales\en.yml" />
+    <Content Include="ch19\blog\config\mongrel.yaml" />
+    <Content Include="ch19\blog\config\scgi.yaml" />
+    <Content Include="ch19\blog\log\development.log" />
+    <Content Include="ch19\blog\log\production.log" />
+    <Content Include="ch19\blog\log\server.log" />
+    <Content Include="ch19\blog\log\test.log" />
+    <Content Include="ch19\blog\public\404.html" />
+    <Content Include="ch19\blog\public\422.html" />
+    <Content Include="ch19\blog\public\500.html" />
+    <Content Include="ch19\blog\public\dispatch.cgi" />
+    <Content Include="ch19\blog\public\dispatch.fcgi" />
+    <Content Include="ch19\blog\public\favicon.ico" />
+    <Content Include="ch19\blog\public\images\rails.png" />
+    <Content Include="ch19\blog\public\index.html" />
+    <Content Include="ch19\blog\public\javascripts\application.js" />
+    <Content Include="ch19\blog\public\javascripts\controls.js" />
+    <Content Include="ch19\blog\public\javascripts\dragdrop.js" />
+    <Content Include="ch19\blog\public\javascripts\effects.js" />
+    <Content Include="ch19\blog\public\javascripts\prototype.js" />
+    <Content Include="ch19\blog\public\robots.txt" />
+    <Content Include="ch19\blog\public\stylesheets\scaffold.css" />
+    <Content Include="ch19\blog\test\fixtures\posts.yml" />
+    <Content Include="ch19\readme.txt" />
+    <Content Include="ch9\test.txt" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedRuby Include="ch19\blog\app\views\layouts\posts.html.erb" />
+    <EmbeddedRuby Include="ch19\blog\app\views\posts\edit.html.erb" />
+    <EmbeddedRuby Include="ch19\blog\app\views\posts\index.html.erb" />
+    <EmbeddedRuby Include="ch19\blog\app\views\posts\new.html.erb" />
+    <EmbeddedRuby Include="ch19\blog\app\views\posts\show.html.erb" />
+    <EmbeddedRuby Include="ch19\blog\app\views\posts\_post.html.erb" />
+    <EmbeddedRuby Include="ch19\embed_ruby.html.erb" />
+    <EmbeddedRuby Include="ch19\say_hello.html.erb" />
+  </ItemGroup>
+  <PropertyGroup>
+    <RailsProject>False</RailsProject>
+    <SteelVersion>1.2</SteelVersion>
+    <AllowEditingWhileDebugging>True</AllowEditingWhileDebugging>
+    <F5StartsRuby>False</F5StartsRuby>
+    <MySQLPath>C:\Program Files\MySQL\MySQL Server 5.0\bin</MySQLPath>
+    <OneBreakpointPerLine>True</OneBreakpointPerLine>
+    <RailsDebugScript>C:\Program Files\SapphireSteel Software\Ruby In Steel\v1.0\Scripts\webbrick_service.rb</RailsDebugScript>
+    <RailsFilter>.log</RailsFilter>
+    <RailsServer>WEBrick</RailsServer>
+    <RubyInterpreter>c:\ruby\bin\ruby.exe</RubyInterpreter>
+    <RubyExeNoDebug>c:\ruby\bin\ruby.exe</RubyExeNoDebug>
+    <ServerPort>3000</ServerPort>
+    <SQLServerPath>C:\Program Files\Microsoft SQL Server\90\Tools\binn</SQLServerPath>
+    <TraceLevel>1</TraceLevel>
+    <UseCylon>True</UseCylon>
+    <UseVisualRailsWorkbench>False</UseVisualRailsWorkbench>
+    <WebServerScript>C:\Program Files\SapphireSteel Software\Ruby In Steel\v1.0\Scripts\webbrick_server.bat</WebServerScript>
+    <ProjectGuid>{12854d6f-1318-4273-a0e9-3a8d2450cf15}</ProjectGuid>
+    <AutoUpdateRWBFiles>True</AutoUpdateRWBFiles>
+    <DebugProximityClass>False</DebugProximityClass>
+    <DebugProximityGlobal>False</DebugProximityGlobal>
+    <DebugProximityInstance>False</DebugProximityInstance>
+    <DebugProximityObjectMethods>True</DebugProximityObjectMethods>
+    <DebugProximitySelf>False</DebugProximitySelf>
+    <DebugProximitySingletonMethods>False</DebugProximitySingletonMethods>
+    <Framework>Rails2</Framework>
+    <ImagePathRWB>../../public</ImagePathRWB>
+    <JITDebugging>False</JITDebugging>
+    <KeepStackFrames>True</KeepStackFrames>
+    <RubyType>Standard</RubyType>
+    <SubstituteFslash>False</SubstituteFslash>
+    <StyleRWB>
+      <style title="erb-style" type="text/css" xmlns="">
+        <!--/* SapphireSteel RWB styles */
+.erb-view{ border: 2px dashed; border-color:Navy; }
+.erb-partial{ border: 2px dotted; border-color:Green; }
+-->
+      </style>
+    </StyleRWB>
+    <SynchronizationExcludeDirectories>~intermediate
+SyntaxCheck</SynchronizationExcludeDirectories>
+    <SynchronizationExcludeExtensions>log</SynchronizationExcludeExtensions>
+    <SynchronizationExcludeHiddenFiles>True</SynchronizationExcludeHiddenFiles>
+    <SynchronizationExcludeNoExtension>True</SynchronizationExcludeNoExtension>
+    <ERBTimeout>60</ERBTimeout>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Name>Debug</Name>
+    <OutputPath>Debug\</OutputPath>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RailsDebugScript>C:\Program Files\SapphireSteel Software\Ruby In Steel\v1.0\Scripts\webbrick_service.rb</RailsDebugScript>
+    <RailsServer>WEBrick</RailsServer>
+    <RubyInterpreter>c:\ruby\bin\ruby.exe</RubyInterpreter>
+    <RubyInterpreterFlags>
+    </RubyInterpreterFlags>
+    <RubyLibraryFiles>
+    </RubyLibraryFiles>
+    <RubyLibraryPaths>
+    </RubyLibraryPaths>
+    <RubyScriptArguments>
+    </RubyScriptArguments>
+    <RubyStartFile>
+    </RubyStartFile>
+    <RubyType>Standard</RubyType>
+    <ServerPort>3000</ServerPort>
+    <WebServerScript>C:\Program Files\SapphireSteel Software\Ruby In Steel\v1.0\Scripts\webbrick_server.bat</WebServerScript>
+    <RakeWorkingDirectory>C:\Huw\BookOfRubyOnline\1-8</RakeWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Name>Release</Name>
+    <OutputPath>Release\</OutputPath>
+  </PropertyGroup>
+  <UsingTask TaskName="Sapphire.Steel.SteelRubyBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=x86" />
+  <UsingTask TaskName="Sapphire.Steel.SteelRailsBuild" AssemblyName="SteelBuild, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a42f26dbbcba2be, processorArchitecture=x86" />
+  <Target Name="BuildRails" Inputs="@(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRailsBuild ERBFile="@(EmbeddedRuby)" ProjectDirectory="$(MSBuildProjectDirectory)" ERBProcessor="$(ERBProcessor)" ERBFlags="$(ERBFlags)" ERBLibraryFiles="$(ERBLibraryFiles)" ERBTimeout="$(ERBTimeout)" />
+  </Target>
+  <Target Name="BuildRuby" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+    <MakeDir Directories="SyntaxCheck" />
+    <SteelRubyBuild RubyFile="@(Ruby)" ProjectDirectory="$(MSBuildProjectDirectory)" RubyInterpreter="$(RubyInterpreter)" RubyInterpreterFlags="$(RubyInterpreterFlags)" RubyLibraryFiles="$(RubyLibraryFiles)" RubyLibraryPaths="$(LibraryPath)" RubyTimeout="$(RubyTimeout)" />
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="$(BuildDependsOn)" Inputs="@(Ruby); @(EmbeddedRuby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\SyntaxCheck" />
+  </Target>
+  <PropertyGroup>
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+    <BuildDependsOn>
+      BeforeBuild;
+      BuildRuby; 
+      BuildRails;
+      AfterBuild;
+    </BuildDependsOn>
+    <SteelVersion>1.2</SteelVersion>
+  </PropertyGroup>
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Inputs="@(Ruby)" Outputs="$(MSBuildProjectDirectory)\SyntaxCheck\%(Identity)">
+  </Target>
+  <Target Name="BeforeBuild" Condition="'$(PreBuildEvent)'!='' ">
+    <Exec Command="$(PreBuildEvent)" />
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(PostBuildEvent)'!='' ">
+    <Exec Command="$(PostBuildEvent)" />
+  </Target>
+  <!--<Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />-->
+  <Target Name="ResolveAssemblyReferences" />
+</Project>

@@ -1,0 +1,6 @@
+# The Book of Ruby - http://www.sapphiresteel.com
+# This file shows three ways of creating a
+# regular expression.
+# Note that =~ is test for equality
+# It means, return True if a regular
+# expression matches a string

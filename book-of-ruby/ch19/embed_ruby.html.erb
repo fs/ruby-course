@@ -1,0 +1,32 @@
+
+<% def showFamily( aClass, msg )   
+     if (aClass != nil) then   
+        msg += "<li>#{aClass}</li>"  
+        showFamily( aClass.superclass, msg )
+     else
+       return msg
+     end   
+   end %>
+   
+<%= "<ul>#{showFamily( self.class, "" )}</ul>" %>
+
+
+<% arr = ['h','e','l','l','o',' ','w','o','r','l','d'] %>
+
+
+<% # sort descending from upper value down to nil 
+reverse_sorted_arr = arr.sort{
+	|a,b|
+		b.to_s <=> a.to_s
+	} %>
+	
+
+<% i = 1 %>
+<ul>
+<% reverse_sorted_arr.each{ |item| %>
+<li><%= "Item [#{i}] = #{item}" %></li>
+<% i += 1 %>
+<% } %>
+</ul>
+
+

@@ -1,0 +1,16 @@
+--- 
+- - The Groovesters
+  - Groovy Tunes
+  - 12
+- - Dolly Parton
+  - Greatest Hits
+  - 38
+--- 
+- !ruby/object:CD 
+  artist: Gribbit Mcluskey
+  name: Fab Songs
+  numtracks: 22
+- !ruby/object:CD 
+  artist: Wayne Snodgrass
+  name: Singalong-a-Snodgrass
+  numtracks: 24
