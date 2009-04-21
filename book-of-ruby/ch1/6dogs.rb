@@ -1,13 +1,13 @@
-# The Book of Ruby - http://www.sapphiresteel.com
-# Create classes and use instance variables such as @myname
+# The Book of Ruby - http://www.sapphiresteel.com Create classes and use
+# instance variables such as @myname
 
 class Dog   
-	def set_name( aName )
-		@myname = aName
+	def set_name(name)
+		@name = name
 	end
 	
 	def get_name
-		 return @myname
+    return @name
 	end
 	
 	def talk
@@ -17,12 +17,12 @@ end
 
 
 class Cat  
-	def set_name( aName )
-		@myname = aName
+	def set_name(name)
+		@name = name
 	end
 	
 	def get_name
-		 return @myname
+    return @name
 	end
 	
 	def talk
@@ -38,10 +38,10 @@ yourcat = Cat.new
 someotherdog = Dog.new
 
 # --- Name them
-mydog.set_name( 'Fido' )
-yourdog.set_name( 'Bonzo' )
-mycat.set_name( 'Tiddles' )
-yourcat.set_name( 'Flossy' )
+mydog.set_name 'Fido'
+yourdog.set_name 'Bonzo' 
+mycat.set_name 'Tiddles' 
+yourcat.set_name 'Flossy' 
 
 
 # --- Get their names and display them

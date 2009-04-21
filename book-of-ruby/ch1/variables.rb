@@ -1,27 +1,27 @@
 # The Book of Ruby - http://www.sapphiresteel.com
 
-localvar = "hello"
-$globalvar = "goodbye" 
+localvar = 'hello'
+$globalvar = 'goodbye'
 
-def amethod
+def a_method
 	localvar = 10
-	puts( localvar )
-	puts( $globalvar )
+	puts(localvar)
+	puts($globalvar)
 end
 
-def anotherMethod
+def another_method
 	localvar = 500
-	$globalvar = "bonjour"
-	puts( localvar )
-	puts( $globalvar )
+	$globalvar = 'bonjour'
+	puts(localvar)
+	puts($globalvar)
 end
 
 
-amethod
+a_method
 puts
-anotherMethod
+another_method
 puts
-amethod
+a_method
 puts
-puts( localvar )
-puts( $globalvar )
+puts(localvar)
+puts($globalvar)
