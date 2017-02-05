@@ -21,3 +21,5 @@ end
 
 badas = Pessoa.new("Badaró", 26)
 badas.talk
+puts ""
+p(badas)
