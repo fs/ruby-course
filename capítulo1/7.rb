@@ -1,6 +1,5 @@
 class Pessoa
-    def initialize
-    end
+    def initialize; end
 
     def get_Name
         @name
@@ -11,13 +10,13 @@ class Pessoa
     end
 
     def set_Age
-        puts "agora digite uma idade:"
+        puts 'agora digite uma idade:'
         @age = gets
         @age.to_i
     end
 
     def set_Name
-        puts "agora digite um nome"
+        puts 'agora digite um nome'
         @name = gets
     end
 end
@@ -25,5 +24,5 @@ end
 badas = Pessoa.new
 badas.set_Age
 badas.set_Name
-puts "agora vamos mostrar as informações do individuo:"
+puts 'agora vamos mostrar as informações do individuo:'
 puts "Nome: #{badas.get_Name}, Idade:#{badas.get_Age}"
