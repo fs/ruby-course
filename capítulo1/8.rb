@@ -1,46 +1,46 @@
+# Classe de pessoa
 class Pessoa
-    def initialize; end
+  def initialize; end
 
-    def get_Name
-        @name
-    end
+  attr_reader :name
 
-    def get_Age
-        @age
-    end
+  attr_reader :age
 
-    def set_Age
-        puts 'agora digite uma idade:'
-        @age = gets
-        @age.to_i
-    end
+  def set_age
+    puts 'agora digite uma idade:'
+    @age = gets
+    @age.to_i
+  end
 
-    def set_Name
-        puts 'agora digite um nome'
-        @name = gets
-    end
+  def set_name
+    puts 'agora digite um nome'
+    @name = gets
+  end
 end
 
+# Classe dos amigoes
 class Amigao < Pessoa
-    def initialize(falaEspecifica)
-        @fala = falaEspecifica
-    end
+  attr_accessor :fala
 
-    def get_Fala
-        @fala
-    end
+  def initialize(fala)
+    @fala = fala
+  end
+
+  attr_reader :fala
 end
 
 puts 'fala ai do cara de cacule'
 badas = Amigao.new('MAHRECO')
-badas.set_Age
-badas.set_Name
+badas.set_age
+badas.set_name
 
 puts 'agora fala ai do cara de brumado'
 wglielber = Amigao.new('CARAI')
-wglielber.set_Age
-wglielber.set_Name
+wglielber.set_age
+wglielber.set_name
 
 puts 'vamos falar dessas kenga agora, la vai:'
-puts "a idade de #{wglielber.get_Name} é #{wglielber.get_Age} e a de #{badas.get_Name} é #{badas.get_Age}"
-puts "encontrei #{wglielber.get_Name} e ele falou #{wglielber.get_Fala}, ja #{badas.get_Name} falou #{badas.get_Fala}. quem entende?"
+puts "a idade de #{wglielber.name} é #{wglielber.age} e a de #{badas.name}
+      é #{badas.age}"
+puts "encontrei #{wglielber.name} e ele falou #{wglielber.fala},
+      ja #{badas.name} falou #{badas.fala}. quem entende?"
