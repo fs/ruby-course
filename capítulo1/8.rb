@@ -2,20 +2,7 @@
 class Pessoa
   def initialize; end
 
-  attr_reader :name
-
-  attr_reader :age
-
-  def set_age
-    puts 'agora digite uma idade:'
-    @age = gets
-    @age.to_i
-  end
-
-  def set_name
-    puts 'agora digite um nome'
-    @name = gets
-  end
+  attr_accessor :name, :age
 end
 
 # Classe dos amigoes
@@ -31,13 +18,17 @@ end
 
 puts 'fala ai do cara de cacule'
 badas = Amigao.new('MAHRECO')
-badas.set_age
-badas.set_name
+puts 'a idade'
+badas.age = gets
+puts 'o nome'
+badas.name = gets
 
 puts 'agora fala ai do cara de brumado'
 wglielber = Amigao.new('CARAI')
-wglielber.set_age
-wglielber.set_name
+puts 'a idade'
+wglielber.age = gets
+puts 'o nome'
+wglielber.name = gets
 
 puts 'vamos falar dessas kenga agora, la vai:'
 puts "a idade de #{wglielber.name} é #{wglielber.age} e a de #{badas.name}
