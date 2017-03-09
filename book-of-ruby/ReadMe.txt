@@ -1,3 +1,7 @@
+Neste fork estão as minhas resoluções para cada exercício do livro.
+Pedro Ivo
+===================================================
+
 The Book Of Ruby
 
 The Book Of Ruby is a free in-depth guide to Ruby programming. 
